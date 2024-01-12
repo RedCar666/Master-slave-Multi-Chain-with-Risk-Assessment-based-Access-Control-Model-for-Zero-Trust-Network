@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: net.sf.oval:oval:1.90">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/oval/oval/1.90/oval-1.90.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/oval/oval/1.90/oval-1.90-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/net/sf/oval/oval/1.90/oval-1.90-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

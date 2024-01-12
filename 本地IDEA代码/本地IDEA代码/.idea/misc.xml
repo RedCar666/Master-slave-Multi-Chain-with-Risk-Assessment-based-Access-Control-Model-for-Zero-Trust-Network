@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$/followchain2_im" />
+    <file type="web" url="file://$PROJECT_DIR$/followchain3_im" />
+    <file type="web" url="file://$PROJECT_DIR$/identitymanager" />
+    <file type="web" url="file://$PROJECT_DIR$/masterchain-im" />
+  </component>
+  <component name="MavenProjectsManager">
+    <option name="originalFiles">
+      <list>
+        <option value="$PROJECT_DIR$/masterchain-im/pom.xml" />
+        <option value="$PROJECT_DIR$/followchain2_im/pom.xml" />
+        <option value="$PROJECT_DIR$/followchain3_im/pom.xml" />
+        <option value="$PROJECT_DIR$/identitymanager/pom.xml" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_1_8" project-jdk-name="1.8" project-jdk-type="JavaSDK" />
+</project>

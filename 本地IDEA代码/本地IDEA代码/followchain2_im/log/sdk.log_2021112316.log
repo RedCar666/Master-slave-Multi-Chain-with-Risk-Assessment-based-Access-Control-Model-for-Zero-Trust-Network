@@ -1,0 +1,432 @@
+[ERROR] [2021-11-23 16:04:18] ChannelHandler.userEventTriggered(30) |  idle state event:READER_IDLE connect81.69.185.207:20200 long time Inactive，disconnect
+[DEBUG] [2021-11-23 16:04:18] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,true
+[DEBUG] [2021-11-23 16:04:18] ChannelConnections.removeNetworkConnectionByHost(311) |  result: true, host: 81.69.185.207, port: 20200, ctx: 1890380275
+[DEBUG] [2021-11-23 16:04:18] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1890380275
+[INFO] [2021-11-23 16:04:18] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 1890380275 
+[DEBUG] [2021-11-23 16:04:18] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:04:18] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 1890380275
+[DEBUG] [2021-11-23 16:04:18] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1890380275
+[ERROR] [2021-11-23 16:04:18] ChannelHandler.userEventTriggered(30) |  idle state event:READER_IDLE connect81.69.185.207:20200 long time Inactive，disconnect
+[DEBUG] [2021-11-23 16:04:18] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,true
+[DEBUG] [2021-11-23 16:04:18] ChannelConnections.removeNetworkConnectionByHost(311) |  result: true, host: 81.69.185.207, port: 20200, ctx: 1385949079
+[DEBUG] [2021-11-23 16:04:18] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1385949079
+[INFO] [2021-11-23 16:04:18] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 1385949079 
+[DEBUG] [2021-11-23 16:04:18] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:04:18] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 1385949079
+[DEBUG] [2021-11-23 16:04:18] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1385949079
+[DEBUG] [2021-11-23 16:04:22] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:04:22] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:04:22] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:04:22] ChannelHandler.setThreadPool(201) | set threadPool:false
+[ERROR] [2021-11-23 16:04:32] ChannelConnections.lambda$reconnect$3(699) |  reconnect to 81.69.185.207:20200, error: connection timed out: /81.69.185.207:20200
+[ERROR] [2021-11-23 16:04:32] ChannelConnections.lambda$reconnect$3(699) |  reconnect to 81.69.185.207:20200, error: connection timed out: /81.69.185.207:20200
+[DEBUG] [2021-11-23 16:04:42] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:04:42] ChannelHandler.setThreadPool(201) | set threadPool:false
+[INFO] [2021-11-23 16:04:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:04:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:04:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:04:42] Service.newSeq(1598) | New Seq: 3a877c94139a4a99ba627253e2217a94
+[ERROR] [2021-11-23 16:04:42] ChannelConnections.randomNetworkConnection(217) |  no active connection is available, maybe network connection exception
+[ERROR] [2021-11-23 16:04:42] Service.asyncSendEthereumMessage(622) |  error message: no active connection available network exception, error: {} 
+java.lang.Exception:  no active connection available network exception
+	at org.fisco.bcos.channel.handler.ChannelConnections.randomNetworkConnection(ChannelConnections.java:218)
+	at org.fisco.bcos.channel.client.Service.asyncSendEthereumMessage(Service.java:583)
+	at org.fisco.bcos.channel.client.Service.sendEthereumMessage(Service.java:437)
+	at org.fisco.bcos.web3j.protocol.channel.ChannelEthereumService.send(ChannelEthereumService.java:56)
+	at org.fisco.bcos.web3j.protocol.core.Request.send(Request.java:90)
+	at com.webank.weid.service.fisco.WeServerUtils.loadGroup(WeServerUtils.java:222)
+	at com.webank.weid.service.fisco.WeServerUtils.access$000(WeServerUtils.java:53)
+	at com.webank.weid.service.fisco.WeServerUtils$1.run(WeServerUtils.java:254)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+[DEBUG] [2021-11-23 16:04:42] Service$1Callback.onResponse(426) | response: 
+[DEBUG] [2021-11-23 16:04:42] ChannelEthereumService.send(62) | bcos request, seq:3a877c94139a4a99ba627253e2217a94, method:getGroupList
+[DEBUG] [2021-11-23 16:04:42] ChannelEthereumService.send(64) | bcos request:3a877c94139a4a99ba627253e2217a94 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":378}
+[WARN] [2021-11-23 16:04:42] WeServerUtils.loadGroup(241) | [loadGroup] get groupList has error.
+java.io.IOException:  no active connection available network exception requset send failed! please check the log file content for reasons.
+	at org.fisco.bcos.web3j.protocol.channel.ChannelEthereumService.send(ChannelEthereumService.java:128)
+	at org.fisco.bcos.web3j.protocol.core.Request.send(Request.java:90)
+	at com.webank.weid.service.fisco.WeServerUtils.loadGroup(WeServerUtils.java:222)
+	at com.webank.weid.service.fisco.WeServerUtils.access$000(WeServerUtils.java:53)
+	at com.webank.weid.service.fisco.WeServerUtils$1.run(WeServerUtils.java:254)
+	at java.base/java.util.TimerThread.mainLoop(Timer.java:556)
+	at java.base/java.util.TimerThread.run(Timer.java:506)
+[DEBUG] [2021-11-23 16:04:42] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:04:42] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:04:42] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:04:43] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:04:43] ReferenceCountedOpenSslEngine.shutdownWithError(1021) | SSL_read failed with 1: OpenSSL error: 336031996 error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+[ERROR] [2021-11-23 16:04:43] ChannelHandler.userEventTriggered(66) |  handshake failed, host: 81.69.185.207, port: 20200, message: error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol, cause: {} 
+javax.net.ssl.SSLHandshakeException: error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.shutdownWithError(ReferenceCountedOpenSslEngine.java:1031)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.sslReadErrorResult(ReferenceCountedOpenSslEngine.java:1300)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1249)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1325)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1368)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1387)
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1294)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1331)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+[DEBUG] [2021-11-23 16:04:43] ChannelHandler.exceptionCaught(167) |  exceptionCaught, disconnect 81.69.185.207:20200 ,false
+[INFO] [2021-11-23 16:04:43] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 724645338 
+[DEBUG] [2021-11-23 16:04:43] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:04:43] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 724645338
+[DEBUG] [2021-11-23 16:04:43] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 724645338
+[DEBUG] [2021-11-23 16:04:44] ReferenceCountedOpenSslEngine.shutdownWithError(1021) | SSL_read failed with 1: OpenSSL error: 336031996 error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+[ERROR] [2021-11-23 16:04:44] ChannelHandler.userEventTriggered(66) |  handshake failed, host: 81.69.185.207, port: 20200, message: error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol, cause: {} 
+javax.net.ssl.SSLHandshakeException: error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.shutdownWithError(ReferenceCountedOpenSslEngine.java:1031)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.sslReadErrorResult(ReferenceCountedOpenSslEngine.java:1300)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1249)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1325)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1368)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1387)
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1294)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1331)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+[DEBUG] [2021-11-23 16:04:44] ChannelHandler.exceptionCaught(167) |  exceptionCaught, disconnect 81.69.185.207:20200 ,false
+[INFO] [2021-11-23 16:04:44] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 876421948 
+[DEBUG] [2021-11-23 16:04:44] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:04:44] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 876421948
+[DEBUG] [2021-11-23 16:04:44] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 876421948
+[DEBUG] [2021-11-23 16:05:02] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:05:02] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:05:02] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:05:02] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:05:07] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:05:07] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:05:15] SslHandler.setHandshakeSuccess(1807) | [id: 0xcb3b1bea, L:/192.168.1.114:50849 - R:/81.69.185.207:20200] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+[INFO] [2021-11-23 16:05:15] ChannelHandler.userEventTriggered(45) |  handshake success, host: 81.69.185.207, port: 20200, ctx: 697314404
+[INFO] [2021-11-23 16:05:15] ConnectionCallback.onConnect(91) |  connect 81.69.185.207:20200 success, ctx: 697314404
+[INFO] [2021-11-23 16:05:15] ConnectionCallback.queryNodeVersion(207) |  query node version host: 81.69.185.207:20200, seq: 19b98090c0de425a90398817b5a17315, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":379}
+[ERROR] [2021-11-23 16:05:17] ChannelHandler.userEventTriggered(66) |  handshake failed, host: 81.69.185.207, port: 20200, message: handshake timed out after 10000ms, cause: {} 
+io.netty.handler.ssl.SslHandshakeTimeoutException: handshake timed out after 10000ms
+	at io.netty.handler.ssl.SslHandler$5.run(SslHandler.java:2069)
+	at io.netty.util.concurrent.PromiseTask.runTask(PromiseTask.java:98)
+	at io.netty.util.concurrent.ScheduledFutureTask.run(ScheduledFutureTask.java:170)
+	at io.netty.util.concurrent.AbstractEventExecutor.safeExecute(AbstractEventExecutor.java:164)
+	at io.netty.util.concurrent.SingleThreadEventExecutor.runAllTasks(SingleThreadEventExecutor.java:472)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:500)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+[INFO] [2021-11-23 16:05:17] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 2130532375 
+[DEBUG] [2021-11-23 16:05:17] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:05:17] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 2130532375
+[DEBUG] [2021-11-23 16:05:17] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 2130532375
+[ERROR] [2021-11-23 16:05:17] ChannelHandler.userEventTriggered(30) |  idle state event:READER_IDLE connect81.69.185.207:20200 long time Inactive，disconnect
+[DEBUG] [2021-11-23 16:05:17] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,true
+[DEBUG] [2021-11-23 16:05:17] ChannelConnections.removeNetworkConnectionByHost(311) |  result: true, host: 81.69.185.207, port: 20200, ctx: 697314404
+[DEBUG] [2021-11-23 16:05:17] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 697314404
+[INFO] [2021-11-23 16:05:17] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 697314404 
+[DEBUG] [2021-11-23 16:05:17] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:05:17] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 697314404
+[DEBUG] [2021-11-23 16:05:17] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 697314404
+[INFO] [2021-11-23 16:05:21] ConnectionCallback$2.onResponse(234) |  query node version timeout, content: 
+[INFO] [2021-11-23 16:05:21] ConnectionCallback.sendUpdateTopicMessage(341) |  send update topic message request, seq: 647fe834f70d4c48994f182a5adb1fbe, content: ["_block_notify_1","chenfei"]
+[DEBUG] [2021-11-23 16:05:21] Service.newSeq(1598) | New Seq: 84a18ff052224953ad3ce0b3230cc06f
+[INFO] [2021-11-23 16:05:21] ConnectionCallback.queryBlockNumber(373) |  query block number host: 81.69.185.207:20200, seq: 84a18ff052224953ad3ce0b3230cc06f, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":380}
+[ERROR] [2021-11-23 16:05:21] ConnectionCallback$3.run(311) | queryNodeVersion timeout, seq: 19b98090c0de425a90398817b5a17315
+[DEBUG] [2021-11-23 16:05:22] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:05:22] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:05:22] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:05:22] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:05:25] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:05:25] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:05:29] SslHandler.setHandshakeSuccess(1807) | [id: 0xe85f6711, L:/192.168.1.114:60560 - R:/81.69.185.207:20200] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+[INFO] [2021-11-23 16:05:29] ChannelHandler.userEventTriggered(45) |  handshake success, host: 81.69.185.207, port: 20200, ctx: 1814008606
+[INFO] [2021-11-23 16:05:29] ConnectionCallback.onConnect(91) |  connect 81.69.185.207:20200 success, ctx: 1814008606
+[INFO] [2021-11-23 16:05:29] ConnectionCallback.queryNodeVersion(207) |  query node version host: 81.69.185.207:20200, seq: 06733840fb1d4912aaf949edcaca88d7, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":381}
+[DEBUG] [2021-11-23 16:05:29] SslHandler.setHandshakeSuccess(1807) | [id: 0xd7172b50, L:/192.168.1.114:60565 - R:/81.69.185.207:20200] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+[INFO] [2021-11-23 16:05:29] ChannelHandler.userEventTriggered(45) |  handshake success, host: 81.69.185.207, port: 20200, ctx: 770095456
+[INFO] [2021-11-23 16:05:29] ConnectionCallback.onConnect(91) |  connect 81.69.185.207:20200 success, ctx: 770095456
+[INFO] [2021-11-23 16:05:29] ConnectionCallback.queryNodeVersion(207) |  query node version host: 81.69.185.207:20200, seq: dc11586a9fad4145b5a00b03a90c5fd0, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":382}
+[DEBUG] [2021-11-23 16:05:32] ChannelHandler.exceptionCaught(167) |  exceptionCaught, disconnect 81.69.185.207:20200 ,true
+[DEBUG] [2021-11-23 16:05:32] ChannelHandler.exceptionCaught(167) |  exceptionCaught, disconnect 81.69.185.207:20200 ,true
+[INFO] [2021-11-23 16:05:32] ChannelHandler.userEventTriggered(83) |  userEventTriggered event, host: 81.69.185.207, port: 20200, evt: io.netty.channel.socket.ChannelInputShutdownReadComplete@373fb5d, ctx: 770095456 
+[INFO] [2021-11-23 16:05:32] ChannelHandler.userEventTriggered(83) |  userEventTriggered event, host: 81.69.185.207, port: 20200, evt: io.netty.channel.socket.ChannelInputShutdownReadComplete@373fb5d, ctx: 1814008606 
+[INFO] [2021-11-23 16:05:32] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 770095456 
+[INFO] [2021-11-23 16:05:32] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 1814008606 
+[DEBUG] [2021-11-23 16:05:32] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:05:32] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:05:32] ChannelConnections.removeNetworkConnectionByHost(311) |  result: true, host: 81.69.185.207, port: 20200, ctx: 770095456
+[DEBUG] [2021-11-23 16:05:32] ChannelConnections.removeNetworkConnectionByHost(311) |  result: true, host: 81.69.185.207, port: 20200, ctx: 1814008606
+[DEBUG] [2021-11-23 16:05:32] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1814008606
+[DEBUG] [2021-11-23 16:05:32] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 770095456
+[INFO] [2021-11-23 16:05:34] ConnectionCallback$2.onResponse(234) |  query node version timeout, content: 
+[INFO] [2021-11-23 16:05:34] ConnectionCallback.sendUpdateTopicMessage(341) |  send update topic message request, seq: 01e4307153e34d5aa5b7501a2b0c2547, content: ["_block_notify_0"]
+[DEBUG] [2021-11-23 16:05:34] Service.newSeq(1598) | New Seq: 1a9b344793174447b119a30f39ee32e6
+[INFO] [2021-11-23 16:05:34] ConnectionCallback.queryBlockNumber(373) |  query block number host: 81.69.185.207:20200, seq: 1a9b344793174447b119a30f39ee32e6, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[0],"id":383}
+[ERROR] [2021-11-23 16:05:34] ConnectionCallback$3.run(311) | queryNodeVersion timeout, seq: 06733840fb1d4912aaf949edcaca88d7
+[INFO] [2021-11-23 16:05:34] ConnectionCallback$2.onResponse(234) |  query node version timeout, content: 
+[INFO] [2021-11-23 16:05:34] ConnectionCallback.sendUpdateTopicMessage(341) |  send update topic message request, seq: 19984b70fb3d4f5ba1954042fdf6ae06, content: ["_block_notify_1","chenfei"]
+[DEBUG] [2021-11-23 16:05:34] Service.newSeq(1598) | New Seq: 9df84eb190734171918ac310dac040cf
+[INFO] [2021-11-23 16:05:34] ConnectionCallback.queryBlockNumber(373) |  query block number host: 81.69.185.207:20200, seq: 9df84eb190734171918ac310dac040cf, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":384}
+[ERROR] [2021-11-23 16:05:34] ConnectionCallback$3.run(311) | queryNodeVersion timeout, seq: dc11586a9fad4145b5a00b03a90c5fd0
+[DEBUG] [2021-11-23 16:05:42] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:05:42] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:05:42] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:05:42] ChannelHandler.setThreadPool(201) | set threadPool:false
+[ERROR] [2021-11-23 16:05:52] ChannelConnections.lambda$reconnect$3(699) |  reconnect to 81.69.185.207:20200, error: connection timed out: /81.69.185.207:20200
+[ERROR] [2021-11-23 16:05:52] ChannelConnections.lambda$reconnect$3(699) |  reconnect to 81.69.185.207:20200, error: connection timed out: /81.69.185.207:20200
+[DEBUG] [2021-11-23 16:06:02] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:06:02] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:06:02] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:06:02] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:06:03] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:06:04] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:06:04] ReferenceCountedOpenSslEngine.shutdownWithError(1021) | SSL_read failed with 1: OpenSSL error: 336031996 error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+[ERROR] [2021-11-23 16:06:04] ChannelHandler.userEventTriggered(66) |  handshake failed, host: 81.69.185.207, port: 20200, message: error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol, cause: {} 
+javax.net.ssl.SSLHandshakeException: error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.shutdownWithError(ReferenceCountedOpenSslEngine.java:1031)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.sslReadErrorResult(ReferenceCountedOpenSslEngine.java:1300)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1249)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1325)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1368)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1387)
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1294)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1331)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+[DEBUG] [2021-11-23 16:06:04] ChannelHandler.exceptionCaught(167) |  exceptionCaught, disconnect 81.69.185.207:20200 ,false
+[INFO] [2021-11-23 16:06:04] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 1829592774 
+[DEBUG] [2021-11-23 16:06:04] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:06:04] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 1829592774
+[DEBUG] [2021-11-23 16:06:04] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1829592774
+[DEBUG] [2021-11-23 16:06:05] ReferenceCountedOpenSslEngine.shutdownWithError(1021) | SSL_read failed with 1: OpenSSL error: 336031996 error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+[ERROR] [2021-11-23 16:06:05] ChannelHandler.userEventTriggered(66) |  handshake failed, host: 81.69.185.207, port: 20200, message: error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol, cause: {} 
+javax.net.ssl.SSLHandshakeException: error:140770FC:SSL routines:SSL23_GET_SERVER_HELLO:unknown protocol
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.shutdownWithError(ReferenceCountedOpenSslEngine.java:1031)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.sslReadErrorResult(ReferenceCountedOpenSslEngine.java:1300)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1249)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1325)
+	at io.netty.handler.ssl.ReferenceCountedOpenSslEngine.unwrap(ReferenceCountedOpenSslEngine.java:1368)
+	at io.netty.handler.ssl.SslHandler$SslEngineType$1.unwrap(SslHandler.java:206)
+	at io.netty.handler.ssl.SslHandler.unwrap(SslHandler.java:1387)
+	at io.netty.handler.ssl.SslHandler.decodeNonJdkCompatible(SslHandler.java:1294)
+	at io.netty.handler.ssl.SslHandler.decode(SslHandler.java:1331)
+	at io.netty.handler.codec.ByteToMessageDecoder.decodeRemovalReentryProtection(ByteToMessageDecoder.java:501)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:440)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:276)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:357)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:379)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:365)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:714)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:576)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:493)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:989)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+[DEBUG] [2021-11-23 16:06:05] ChannelHandler.exceptionCaught(167) |  exceptionCaught, disconnect 81.69.185.207:20200 ,false
+[INFO] [2021-11-23 16:06:05] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 1198554458 
+[DEBUG] [2021-11-23 16:06:05] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 16:06:05] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 1198554458
+[DEBUG] [2021-11-23 16:06:05] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1198554458
+[DEBUG] [2021-11-23 16:06:22] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:06:22] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:06:22] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:06:22] SslHandler.setHandshakeSuccess(1807) | [id: 0xae5ab9ef, L:/10.163.238.170:59630 - R:/81.69.185.207:20200] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+[INFO] [2021-11-23 16:06:22] ChannelHandler.userEventTriggered(45) |  handshake success, host: 81.69.185.207, port: 20200, ctx: 1405628801
+[INFO] [2021-11-23 16:06:22] ConnectionCallback.onConnect(91) |  connect 81.69.185.207:20200 success, ctx: 1405628801
+[INFO] [2021-11-23 16:06:22] ConnectionCallback.queryNodeVersion(207) |  query node version host: 81.69.185.207:20200, seq: 612f16227b2e4885a51fd5c38d332718, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":385}
+[INFO] [2021-11-23 16:06:22] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20210830 12:52:15, buildType=Linux/clang/Release, chainID=1, version=2.8.0, gitBranch=HEAD, gitCommit=30fb38ac5692468058abf6aa12869d2ae776c275, supportedVersion=2.8.0], content: {"id":385,"jsonrpc":"2.0","result":{"Build Time":"20210830 12:52:15","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.8.0","Git Branch":"HEAD","Git Commit Hash":"30fb38ac5692468058abf6aa12869d2ae776c275","Supported Version":"2.8.0"}}
+
+[INFO] [2021-11-23 16:06:22] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20210830 12:52:15, buildType=Linux/clang/Release, chainID=1, version=2.8.0, gitBranch=HEAD, gitCommit=30fb38ac5692468058abf6aa12869d2ae776c275, supportedVersion=2.8.0], content: {"id":385,"jsonrpc":"2.0","result":{"Build Time":"20210830 12:52:15","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.8.0","Git Branch":"HEAD","Git Commit Hash":"30fb38ac5692468058abf6aa12869d2ae776c275","Supported Version":"2.8.0"}}
+
+[DEBUG] [2021-11-23 16:06:22] ConnectionCallback.queryChannelProtocolVersion(119) |  channel protocol handshake, host: 81.69.185.207:20200, seq: 8795eb0709b04b3ea71d5a724c90d2e9, content: {"maximumSupport":3,"minimumSupport":1,"clientType":"java-sdk"}
+[INFO] [2021-11-23 16:06:22] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 81.69.185.207:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.8.0, EnumProtocol=VERSION_3]
+[INFO] [2021-11-23 16:06:22] ConnectionCallback.sendUpdateTopicMessage(341) |  send update topic message request, seq: 7eaf46277e634fc0978a8766a471aa70, content: ["_block_notify_0"]
+[DEBUG] [2021-11-23 16:06:22] Service.newSeq(1598) | New Seq: 09a3956309a24eaeae90b1c70c808c23
+[INFO] [2021-11-23 16:06:22] ConnectionCallback.queryBlockNumber(373) |  query block number host: 81.69.185.207:20200, seq: 09a3956309a24eaeae90b1c70c808c23, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[0],"id":386}
+[INFO] [2021-11-23 16:06:22] ConnectionCallback$4.onResponse(398) |  query blocknumer, host:81.69.185.207:20200, blockNumber: 0 
+[DEBUG] [2021-11-23 16:06:22] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 16:06:22] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 16:06:22] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 16:06:22] SslHandler.setHandshakeSuccess(1807) | [id: 0x6f431a1f, L:/10.163.238.170:59636 - R:/81.69.185.207:20200] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+[INFO] [2021-11-23 16:06:22] ChannelHandler.userEventTriggered(45) |  handshake success, host: 81.69.185.207, port: 20200, ctx: 1750649481
+[INFO] [2021-11-23 16:06:22] ConnectionCallback.onConnect(91) |  connect 81.69.185.207:20200 success, ctx: 1750649481
+[INFO] [2021-11-23 16:06:22] ConnectionCallback.queryNodeVersion(207) |  query node version host: 81.69.185.207:20200, seq: bc114c694efa4da49beb97ef0d053284, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":387}
+[INFO] [2021-11-23 16:06:22] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20210830 12:52:15, buildType=Linux/clang/Release, chainID=1, version=2.8.0, gitBranch=HEAD, gitCommit=30fb38ac5692468058abf6aa12869d2ae776c275, supportedVersion=2.8.0], content: {"id":387,"jsonrpc":"2.0","result":{"Build Time":"20210830 12:52:15","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.8.0","Git Branch":"HEAD","Git Commit Hash":"30fb38ac5692468058abf6aa12869d2ae776c275","Supported Version":"2.8.0"}}
+
+[INFO] [2021-11-23 16:06:22] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20210830 12:52:15, buildType=Linux/clang/Release, chainID=1, version=2.8.0, gitBranch=HEAD, gitCommit=30fb38ac5692468058abf6aa12869d2ae776c275, supportedVersion=2.8.0], content: {"id":387,"jsonrpc":"2.0","result":{"Build Time":"20210830 12:52:15","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.8.0","Git Branch":"HEAD","Git Commit Hash":"30fb38ac5692468058abf6aa12869d2ae776c275","Supported Version":"2.8.0"}}
+
+[DEBUG] [2021-11-23 16:06:22] ConnectionCallback.queryChannelProtocolVersion(119) |  channel protocol handshake, host: 81.69.185.207:20200, seq: f6edd91133f94aff808c371cedec9868, content: {"maximumSupport":3,"minimumSupport":1,"clientType":"java-sdk"}
+[INFO] [2021-11-23 16:06:22] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 81.69.185.207:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.8.0, EnumProtocol=VERSION_3]
+[INFO] [2021-11-23 16:06:22] ConnectionCallback.sendUpdateTopicMessage(341) |  send update topic message request, seq: f9d060bddee74663bab309fb8a72de81, content: ["_block_notify_1","chenfei"]
+[DEBUG] [2021-11-23 16:06:22] Service.newSeq(1598) | New Seq: 7adc0c4bcedd4749ae1825547c3e880a
+[INFO] [2021-11-23 16:06:22] ConnectionCallback.queryBlockNumber(373) |  query block number host: 81.69.185.207:20200, seq: 7adc0c4bcedd4749ae1825547c3e880a, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":388}
+[INFO] [2021-11-23 16:06:22] ConnectionCallback$4.onResponse(398) |  query blocknumer, host:81.69.185.207:20200, blockNumber: 125 
+[INFO] [2021-11-23 16:09:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:09:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:09:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:09:42] Service.newSeq(1598) | New Seq: ac8230fd1dbf4bdaa427615c1f85df11
+[DEBUG] [2021-11-23 16:09:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:ac8230fd1dbf4bdaa427615c1f85df11
+[DEBUG] [2021-11-23 16:09:42] Service$1Callback.onResponse(426) | response: {"id":389,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:09:42] ChannelEthereumService.send(62) | bcos request, seq:ac8230fd1dbf4bdaa427615c1f85df11, method:getGroupList
+[DEBUG] [2021-11-23 16:09:42] ChannelEthereumService.send(64) | bcos request:ac8230fd1dbf4bdaa427615c1f85df11 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":389}
+[INFO] [2021-11-23 16:09:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:14:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:14:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:14:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:14:42] Service.newSeq(1598) | New Seq: 5bfb4cd44c31468cadc84c6b64cd08fd
+[DEBUG] [2021-11-23 16:14:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:5bfb4cd44c31468cadc84c6b64cd08fd
+[DEBUG] [2021-11-23 16:14:42] Service$1Callback.onResponse(426) | response: {"id":390,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:14:42] ChannelEthereumService.send(62) | bcos request, seq:5bfb4cd44c31468cadc84c6b64cd08fd, method:getGroupList
+[DEBUG] [2021-11-23 16:14:42] ChannelEthereumService.send(64) | bcos request:5bfb4cd44c31468cadc84c6b64cd08fd {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":390}
+[INFO] [2021-11-23 16:14:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:19:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:19:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:19:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:19:42] Service.newSeq(1598) | New Seq: 042078922e93498382c677202f8c9418
+[DEBUG] [2021-11-23 16:19:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:042078922e93498382c677202f8c9418
+[DEBUG] [2021-11-23 16:19:42] Service$1Callback.onResponse(426) | response: {"id":391,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:19:42] ChannelEthereumService.send(62) | bcos request, seq:042078922e93498382c677202f8c9418, method:getGroupList
+[DEBUG] [2021-11-23 16:19:42] ChannelEthereumService.send(64) | bcos request:042078922e93498382c677202f8c9418 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":391}
+[INFO] [2021-11-23 16:19:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:24:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:24:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:24:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:24:42] Service.newSeq(1598) | New Seq: 1fab5a3d7b8940fa9cdd543c1193b1d3
+[DEBUG] [2021-11-23 16:24:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:1fab5a3d7b8940fa9cdd543c1193b1d3
+[DEBUG] [2021-11-23 16:24:42] Service$1Callback.onResponse(426) | response: {"id":392,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:24:42] ChannelEthereumService.send(62) | bcos request, seq:1fab5a3d7b8940fa9cdd543c1193b1d3, method:getGroupList
+[DEBUG] [2021-11-23 16:24:42] ChannelEthereumService.send(64) | bcos request:1fab5a3d7b8940fa9cdd543c1193b1d3 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":392}
+[INFO] [2021-11-23 16:24:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:29:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:29:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:29:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:29:42] Service.newSeq(1598) | New Seq: 116056eddbc945aa864aad29b484e84d
+[DEBUG] [2021-11-23 16:29:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:116056eddbc945aa864aad29b484e84d
+[DEBUG] [2021-11-23 16:29:42] Service$1Callback.onResponse(426) | response: {"id":393,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:29:42] ChannelEthereumService.send(62) | bcos request, seq:116056eddbc945aa864aad29b484e84d, method:getGroupList
+[DEBUG] [2021-11-23 16:29:42] ChannelEthereumService.send(64) | bcos request:116056eddbc945aa864aad29b484e84d {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":393}
+[INFO] [2021-11-23 16:29:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:34:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:34:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:34:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:34:42] Service.newSeq(1598) | New Seq: 6ecd000a17ef4b629d10040525520a7f
+[DEBUG] [2021-11-23 16:34:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:6ecd000a17ef4b629d10040525520a7f
+[DEBUG] [2021-11-23 16:34:42] Service$1Callback.onResponse(426) | response: {"id":394,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:34:42] ChannelEthereumService.send(62) | bcos request, seq:6ecd000a17ef4b629d10040525520a7f, method:getGroupList
+[DEBUG] [2021-11-23 16:34:42] ChannelEthereumService.send(64) | bcos request:6ecd000a17ef4b629d10040525520a7f {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":394}
+[INFO] [2021-11-23 16:34:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:39:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:39:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:39:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:39:42] Service.newSeq(1598) | New Seq: 44167cdc59b14378a72620b5b696dd38
+[DEBUG] [2021-11-23 16:39:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:44167cdc59b14378a72620b5b696dd38
+[DEBUG] [2021-11-23 16:39:42] Service$1Callback.onResponse(426) | response: {"id":395,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:39:42] ChannelEthereumService.send(62) | bcos request, seq:44167cdc59b14378a72620b5b696dd38, method:getGroupList
+[DEBUG] [2021-11-23 16:39:42] ChannelEthereumService.send(64) | bcos request:44167cdc59b14378a72620b5b696dd38 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":395}
+[INFO] [2021-11-23 16:39:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:44:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:44:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:44:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:44:42] Service.newSeq(1598) | New Seq: f0bba392996d4775952ba2763255c5f4
+[DEBUG] [2021-11-23 16:44:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:f0bba392996d4775952ba2763255c5f4
+[DEBUG] [2021-11-23 16:44:42] Service$1Callback.onResponse(426) | response: {"id":396,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:44:42] ChannelEthereumService.send(62) | bcos request, seq:f0bba392996d4775952ba2763255c5f4, method:getGroupList
+[DEBUG] [2021-11-23 16:44:42] ChannelEthereumService.send(64) | bcos request:f0bba392996d4775952ba2763255c5f4 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":396}
+[INFO] [2021-11-23 16:44:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:49:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:49:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:49:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:49:42] Service.newSeq(1598) | New Seq: 6e46e148df774236bfc38317654f8b77
+[DEBUG] [2021-11-23 16:49:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:6e46e148df774236bfc38317654f8b77
+[DEBUG] [2021-11-23 16:49:42] Service$1Callback.onResponse(426) | response: {"id":397,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:49:42] ChannelEthereumService.send(62) | bcos request, seq:6e46e148df774236bfc38317654f8b77, method:getGroupList
+[DEBUG] [2021-11-23 16:49:42] ChannelEthereumService.send(64) | bcos request:6e46e148df774236bfc38317654f8b77 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":397}
+[INFO] [2021-11-23 16:49:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:54:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:54:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:54:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:54:42] Service.newSeq(1598) | New Seq: 619931ea9f6c4b61b652581315660645
+[DEBUG] [2021-11-23 16:54:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:619931ea9f6c4b61b652581315660645
+[DEBUG] [2021-11-23 16:54:42] Service$1Callback.onResponse(426) | response: {"id":398,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:54:42] ChannelEthereumService.send(62) | bcos request, seq:619931ea9f6c4b61b652581315660645, method:getGroupList
+[DEBUG] [2021-11-23 16:54:42] ChannelEthereumService.send(64) | bcos request:619931ea9f6c4b61b652581315660645 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":398}
+[INFO] [2021-11-23 16:54:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 16:59:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 16:59:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 16:59:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 16:59:42] Service.newSeq(1598) | New Seq: 92cdbcefabed4f5099ac259d482e9fe9
+[DEBUG] [2021-11-23 16:59:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:92cdbcefabed4f5099ac259d482e9fe9
+[DEBUG] [2021-11-23 16:59:42] Service$1Callback.onResponse(426) | response: {"id":399,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 16:59:42] ChannelEthereumService.send(62) | bcos request, seq:92cdbcefabed4f5099ac259d482e9fe9, method:getGroupList
+[DEBUG] [2021-11-23 16:59:42] ChannelEthereumService.send(64) | bcos request:92cdbcefabed4f5099ac259d482e9fe9 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":399}
+[INFO] [2021-11-23 16:59:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].

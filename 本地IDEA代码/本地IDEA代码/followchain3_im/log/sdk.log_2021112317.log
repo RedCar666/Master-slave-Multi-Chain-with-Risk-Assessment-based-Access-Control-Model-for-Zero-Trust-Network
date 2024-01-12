@@ -1,0 +1,176 @@
+[INFO] [2021-11-23 17:04:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:04:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:04:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:04:42] Service.newSeq(1598) | New Seq: 73f1dfd320e54c5289340b5882c1ad6e
+[DEBUG] [2021-11-23 17:04:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:73f1dfd320e54c5289340b5882c1ad6e
+[DEBUG] [2021-11-23 17:04:42] Service$1Callback.onResponse(426) | response: {"id":400,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:04:42] ChannelEthereumService.send(62) | bcos request, seq:73f1dfd320e54c5289340b5882c1ad6e, method:getGroupList
+[DEBUG] [2021-11-23 17:04:42] ChannelEthereumService.send(64) | bcos request:73f1dfd320e54c5289340b5882c1ad6e {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":400}
+[INFO] [2021-11-23 17:04:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:09:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:09:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:09:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:09:42] Service.newSeq(1598) | New Seq: 00a48a8d11134562ba4530fdca53f011
+[DEBUG] [2021-11-23 17:09:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:00a48a8d11134562ba4530fdca53f011
+[DEBUG] [2021-11-23 17:09:42] Service$1Callback.onResponse(426) | response: {"id":401,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:09:42] ChannelEthereumService.send(62) | bcos request, seq:00a48a8d11134562ba4530fdca53f011, method:getGroupList
+[DEBUG] [2021-11-23 17:09:42] ChannelEthereumService.send(64) | bcos request:00a48a8d11134562ba4530fdca53f011 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":401}
+[INFO] [2021-11-23 17:09:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[ERROR] [2021-11-23 17:10:22] ChannelHandler.userEventTriggered(30) |  idle state event:READER_IDLE connect81.69.185.207:20200 long time Inactive，disconnect
+[DEBUG] [2021-11-23 17:10:22] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,true
+[ERROR] [2021-11-23 17:10:22] ChannelHandler.userEventTriggered(30) |  idle state event:READER_IDLE connect81.69.185.207:20200 long time Inactive，disconnect
+[DEBUG] [2021-11-23 17:10:22] ChannelConnections.removeNetworkConnectionByHost(311) |  result: true, host: 81.69.185.207, port: 20200, ctx: 1750649481
+[DEBUG] [2021-11-23 17:10:22] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,true
+[DEBUG] [2021-11-23 17:10:22] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1750649481
+[DEBUG] [2021-11-23 17:10:22] ChannelConnections.removeNetworkConnectionByHost(311) |  result: true, host: 81.69.185.207, port: 20200, ctx: 1405628801
+[DEBUG] [2021-11-23 17:10:22] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1405628801
+[INFO] [2021-11-23 17:10:22] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 1405628801 
+[INFO] [2021-11-23 17:10:22] ChannelHandler.userEventTriggered(77) |  ssl close completion event, host: 81.69.185.207, port: 20200, ctx: 1750649481 
+[DEBUG] [2021-11-23 17:10:22] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 17:10:22] ChannelHandler.channelInactive(121) |  channelInactive, disconnect 81.69.185.207:20200 ,false
+[DEBUG] [2021-11-23 17:10:22] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 1405628801
+[DEBUG] [2021-11-23 17:10:22] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1405628801
+[DEBUG] [2021-11-23 17:10:22] ChannelConnections.removeNetworkConnectionByHost(311) |  result: false, host: 81.69.185.207, port: 20200, ctx: 1750649481
+[DEBUG] [2021-11-23 17:10:22] ConnectionCallback.onDisconnect(418) |  disconnect, host: 81.69.185.207:20200, ctx: 1750649481
+[DEBUG] [2021-11-23 17:10:42] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 17:10:42] ChannelHandler.setThreadPool(201) | set threadPool:false
+[ERROR] [2021-11-23 17:10:42] ChannelConnections.lambda$reconnect$3(699) |  reconnect to 81.69.185.207:20200, error: No route to host: no further information: /81.69.185.207:20200
+[DEBUG] [2021-11-23 17:10:42] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 17:10:42] ChannelHandler.setThreadPool(201) | set threadPool:false
+[ERROR] [2021-11-23 17:10:42] ChannelConnections.lambda$reconnect$3(699) |  reconnect to 81.69.185.207:20200, error: No route to host: no further information: /81.69.185.207:20200
+[DEBUG] [2021-11-23 17:11:02] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 17:11:02] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 17:11:02] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[DEBUG] [2021-11-23 17:11:02] ChannelConnections.reconnect(685) |  try reconnect to 81.69.185.207:20200
+[DEBUG] [2021-11-23 17:11:02] ChannelHandler.setThreadPool(201) | set threadPool:false
+[DEBUG] [2021-11-23 17:11:02] SslHandler.setHandshakeSuccess(1807) | [id: 0x802203a6, L:/192.168.1.114:63266 - R:/81.69.185.207:20200] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+[INFO] [2021-11-23 17:11:02] ChannelHandler.userEventTriggered(45) |  handshake success, host: 81.69.185.207, port: 20200, ctx: 690551926
+[DEBUG] [2021-11-23 17:11:02] ChannelHandler.channelActive(100) |  tcp connect success, wait for ssl handshake, connected[81.69.185.207]:[20200],true
+[INFO] [2021-11-23 17:11:02] ConnectionCallback.onConnect(91) |  connect 81.69.185.207:20200 success, ctx: 690551926
+[INFO] [2021-11-23 17:11:02] ConnectionCallback.queryNodeVersion(207) |  query node version host: 81.69.185.207:20200, seq: 3359ac53fdc146b484f8d21f2236d324, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":402}
+[INFO] [2021-11-23 17:11:03] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20210830 12:52:15, buildType=Linux/clang/Release, chainID=1, version=2.8.0, gitBranch=HEAD, gitCommit=30fb38ac5692468058abf6aa12869d2ae776c275, supportedVersion=2.8.0], content: {"id":402,"jsonrpc":"2.0","result":{"Build Time":"20210830 12:52:15","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.8.0","Git Branch":"HEAD","Git Commit Hash":"30fb38ac5692468058abf6aa12869d2ae776c275","Supported Version":"2.8.0"}}
+
+[INFO] [2021-11-23 17:11:03] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20210830 12:52:15, buildType=Linux/clang/Release, chainID=1, version=2.8.0, gitBranch=HEAD, gitCommit=30fb38ac5692468058abf6aa12869d2ae776c275, supportedVersion=2.8.0], content: {"id":402,"jsonrpc":"2.0","result":{"Build Time":"20210830 12:52:15","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.8.0","Git Branch":"HEAD","Git Commit Hash":"30fb38ac5692468058abf6aa12869d2ae776c275","Supported Version":"2.8.0"}}
+
+[DEBUG] [2021-11-23 17:11:03] ConnectionCallback.queryChannelProtocolVersion(119) |  channel protocol handshake, host: 81.69.185.207:20200, seq: 8b021d0267b247eab9f6fcf3b8a91b9e, content: {"maximumSupport":3,"minimumSupport":1,"clientType":"java-sdk"}
+[INFO] [2021-11-23 17:11:03] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 81.69.185.207:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.8.0, EnumProtocol=VERSION_3]
+[INFO] [2021-11-23 17:11:03] ConnectionCallback.sendUpdateTopicMessage(341) |  send update topic message request, seq: 660d5405ca0d4fa2bd46f8a227f546f0, content: ["_block_notify_0"]
+[DEBUG] [2021-11-23 17:11:03] Service.newSeq(1598) | New Seq: f949fe57241a4ebc907e2848137b12b4
+[INFO] [2021-11-23 17:11:03] ConnectionCallback.queryBlockNumber(373) |  query block number host: 81.69.185.207:20200, seq: f949fe57241a4ebc907e2848137b12b4, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[0],"id":403}
+[DEBUG] [2021-11-23 17:11:03] SslHandler.setHandshakeSuccess(1807) | [id: 0x07c72908, L:/192.168.1.114:63271 - R:/81.69.185.207:20200] HANDSHAKEN: protocol:TLSv1.2 cipher suite:TLS_ECDHE_ECDSA_WITH_AES_256_GCM_SHA384
+[INFO] [2021-11-23 17:11:03] ChannelHandler.userEventTriggered(45) |  handshake success, host: 81.69.185.207, port: 20200, ctx: 1457096027
+[INFO] [2021-11-23 17:11:03] ConnectionCallback.onConnect(91) |  connect 81.69.185.207:20200 success, ctx: 1457096027
+[INFO] [2021-11-23 17:11:03] ConnectionCallback.queryNodeVersion(207) |  query node version host: 81.69.185.207:20200, seq: 263d0f0f971a4562a83a9dcd858a9763, content: {"jsonrpc":"2.0","method":"getClientVersion","params":[],"id":404}
+[INFO] [2021-11-23 17:11:03] ConnectionCallback$2.onResponse(258) |  node: Version [buildTime=20210830 12:52:15, buildType=Linux/clang/Release, chainID=1, version=2.8.0, gitBranch=HEAD, gitCommit=30fb38ac5692468058abf6aa12869d2ae776c275, supportedVersion=2.8.0], content: {"id":404,"jsonrpc":"2.0","result":{"Build Time":"20210830 12:52:15","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.8.0","Git Branch":"HEAD","Git Commit Hash":"30fb38ac5692468058abf6aa12869d2ae776c275","Supported Version":"2.8.0"}}
+
+[INFO] [2021-11-23 17:11:03] ConnectionCallback$4.onResponse(398) |  query blocknumer, host:81.69.185.207:20200, blockNumber: 0 
+[INFO] [2021-11-23 17:11:03] ConnectionCallback$2.onResponse(267) |  support channel handshake node: Version [buildTime=20210830 12:52:15, buildType=Linux/clang/Release, chainID=1, version=2.8.0, gitBranch=HEAD, gitCommit=30fb38ac5692468058abf6aa12869d2ae776c275, supportedVersion=2.8.0], content: {"id":404,"jsonrpc":"2.0","result":{"Build Time":"20210830 12:52:15","Build Type":"Linux/clang/Release","Chain Id":"1","FISCO-BCOS Version":"2.8.0","Git Branch":"HEAD","Git Commit Hash":"30fb38ac5692468058abf6aa12869d2ae776c275","Supported Version":"2.8.0"}}
+
+[DEBUG] [2021-11-23 17:11:03] ConnectionCallback.queryChannelProtocolVersion(119) |  channel protocol handshake, host: 81.69.185.207:20200, seq: 07f482957a684521947f98897c65dc28, content: {"maximumSupport":3,"minimumSupport":1,"clientType":"java-sdk"}
+[INFO] [2021-11-23 17:11:03] ConnectionCallback$1.onResponse(167) |  channel protocol handshake success, set socket channel protocol, host: 81.69.185.207:20200, channel protocol: ChannelProtocol [protocol=3, nodeVersion=2.8.0, EnumProtocol=VERSION_3]
+[INFO] [2021-11-23 17:11:03] ConnectionCallback.sendUpdateTopicMessage(341) |  send update topic message request, seq: 7dc382a6f6854e8f80448aef9a1db704, content: ["_block_notify_1","chenfei"]
+[DEBUG] [2021-11-23 17:11:03] Service.newSeq(1598) | New Seq: e589bfa9c1074d8fa63ddda134227dfd
+[INFO] [2021-11-23 17:11:03] ConnectionCallback.queryBlockNumber(373) |  query block number host: 81.69.185.207:20200, seq: e589bfa9c1074d8fa63ddda134227dfd, content: {"jsonrpc":"2.0","method":"getBlockNumber","params":[1],"id":405}
+[INFO] [2021-11-23 17:11:03] ConnectionCallback$4.onResponse(398) |  query blocknumer, host:81.69.185.207:20200, blockNumber: 125 
+[INFO] [2021-11-23 17:14:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:14:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:14:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:14:42] Service.newSeq(1598) | New Seq: 4536a0e1f5694c82bed3eb1740599af5
+[DEBUG] [2021-11-23 17:14:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:4536a0e1f5694c82bed3eb1740599af5
+[DEBUG] [2021-11-23 17:14:42] Service$1Callback.onResponse(426) | response: {"id":406,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:14:42] ChannelEthereumService.send(62) | bcos request, seq:4536a0e1f5694c82bed3eb1740599af5, method:getGroupList
+[DEBUG] [2021-11-23 17:14:42] ChannelEthereumService.send(64) | bcos request:4536a0e1f5694c82bed3eb1740599af5 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":406}
+[INFO] [2021-11-23 17:14:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:19:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:19:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:19:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:19:42] Service.newSeq(1598) | New Seq: be1706f95cfe4752ba048d5166a048e7
+[DEBUG] [2021-11-23 17:19:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:be1706f95cfe4752ba048d5166a048e7
+[DEBUG] [2021-11-23 17:19:42] Service$1Callback.onResponse(426) | response: {"id":407,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:19:42] ChannelEthereumService.send(62) | bcos request, seq:be1706f95cfe4752ba048d5166a048e7, method:getGroupList
+[DEBUG] [2021-11-23 17:19:42] ChannelEthereumService.send(64) | bcos request:be1706f95cfe4752ba048d5166a048e7 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":407}
+[INFO] [2021-11-23 17:19:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:24:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:24:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:24:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:24:42] Service.newSeq(1598) | New Seq: cfd59b032b9b4d76b78427ffe72344d3
+[DEBUG] [2021-11-23 17:24:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:cfd59b032b9b4d76b78427ffe72344d3
+[DEBUG] [2021-11-23 17:24:42] Service$1Callback.onResponse(426) | response: {"id":408,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:24:42] ChannelEthereumService.send(62) | bcos request, seq:cfd59b032b9b4d76b78427ffe72344d3, method:getGroupList
+[DEBUG] [2021-11-23 17:24:42] ChannelEthereumService.send(64) | bcos request:cfd59b032b9b4d76b78427ffe72344d3 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":408}
+[INFO] [2021-11-23 17:24:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:29:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:29:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:29:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:29:42] Service.newSeq(1598) | New Seq: a6aa1f14d73f49629bd12823867cf300
+[DEBUG] [2021-11-23 17:29:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:a6aa1f14d73f49629bd12823867cf300
+[DEBUG] [2021-11-23 17:29:42] Service$1Callback.onResponse(426) | response: {"id":409,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:29:42] ChannelEthereumService.send(62) | bcos request, seq:a6aa1f14d73f49629bd12823867cf300, method:getGroupList
+[DEBUG] [2021-11-23 17:29:42] ChannelEthereumService.send(64) | bcos request:a6aa1f14d73f49629bd12823867cf300 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":409}
+[INFO] [2021-11-23 17:29:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:34:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:34:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:34:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:34:42] Service.newSeq(1598) | New Seq: c7737f4a3ab54f3198941640138dd8b4
+[DEBUG] [2021-11-23 17:34:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:c7737f4a3ab54f3198941640138dd8b4
+[DEBUG] [2021-11-23 17:34:42] Service$1Callback.onResponse(426) | response: {"id":410,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:34:42] ChannelEthereumService.send(62) | bcos request, seq:c7737f4a3ab54f3198941640138dd8b4, method:getGroupList
+[DEBUG] [2021-11-23 17:34:42] ChannelEthereumService.send(64) | bcos request:c7737f4a3ab54f3198941640138dd8b4 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":410}
+[INFO] [2021-11-23 17:34:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:39:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:39:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:39:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:39:42] Service.newSeq(1598) | New Seq: 2f32a940506042e59201851e997fae4a
+[DEBUG] [2021-11-23 17:39:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:2f32a940506042e59201851e997fae4a
+[DEBUG] [2021-11-23 17:39:42] Service$1Callback.onResponse(426) | response: {"id":411,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:39:42] ChannelEthereumService.send(62) | bcos request, seq:2f32a940506042e59201851e997fae4a, method:getGroupList
+[DEBUG] [2021-11-23 17:39:42] ChannelEthereumService.send(64) | bcos request:2f32a940506042e59201851e997fae4a {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":411}
+[INFO] [2021-11-23 17:39:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:44:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:44:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:44:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:44:42] Service.newSeq(1598) | New Seq: 95b9d09b793f4c7e96c536eb725455bf
+[DEBUG] [2021-11-23 17:44:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:95b9d09b793f4c7e96c536eb725455bf
+[DEBUG] [2021-11-23 17:44:42] Service$1Callback.onResponse(426) | response: {"id":412,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:44:42] ChannelEthereumService.send(62) | bcos request, seq:95b9d09b793f4c7e96c536eb725455bf, method:getGroupList
+[DEBUG] [2021-11-23 17:44:42] ChannelEthereumService.send(64) | bcos request:95b9d09b793f4c7e96c536eb725455bf {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":412}
+[INFO] [2021-11-23 17:44:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:49:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:49:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:49:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:49:42] Service.newSeq(1598) | New Seq: a451906ae78940d293c82af284d49259
+[DEBUG] [2021-11-23 17:49:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:a451906ae78940d293c82af284d49259
+[DEBUG] [2021-11-23 17:49:42] Service$1Callback.onResponse(426) | response: {"id":413,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:49:42] ChannelEthereumService.send(62) | bcos request, seq:a451906ae78940d293c82af284d49259, method:getGroupList
+[DEBUG] [2021-11-23 17:49:42] ChannelEthereumService.send(64) | bcos request:a451906ae78940d293c82af284d49259 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":413}
+[INFO] [2021-11-23 17:49:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:54:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:54:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:54:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:54:42] Service.newSeq(1598) | New Seq: b4075b8065474904971ac4b3d3e1c5b3
+[DEBUG] [2021-11-23 17:54:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:b4075b8065474904971ac4b3d3e1c5b3
+[DEBUG] [2021-11-23 17:54:42] Service$1Callback.onResponse(426) | response: {"id":414,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:54:42] ChannelEthereumService.send(62) | bcos request, seq:b4075b8065474904971ac4b3d3e1c5b3, method:getGroupList
+[DEBUG] [2021-11-23 17:54:42] ChannelEthereumService.send(64) | bcos request:b4075b8065474904971ac4b3d3e1c5b3 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":414}
+[INFO] [2021-11-23 17:54:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-23 17:59:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-23 17:59:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-23 17:59:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-23 17:59:42] Service.newSeq(1598) | New Seq: 7321ed0d72cc4f24811b443e310324fc
+[DEBUG] [2021-11-23 17:59:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:7321ed0d72cc4f24811b443e310324fc
+[DEBUG] [2021-11-23 17:59:42] Service$1Callback.onResponse(426) | response: {"id":415,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-23 17:59:42] ChannelEthereumService.send(62) | bcos request, seq:7321ed0d72cc4f24811b443e310324fc, method:getGroupList
+[DEBUG] [2021-11-23 17:59:42] ChannelEthereumService.send(64) | bcos request:7321ed0d72cc4f24811b443e310324fc {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":415}
+[INFO] [2021-11-23 17:59:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].

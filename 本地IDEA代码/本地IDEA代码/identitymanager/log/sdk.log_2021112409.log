@@ -1,0 +1,20 @@
+[INFO] [2021-11-24 09:04:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-24 09:04:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-24 09:04:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-24 09:04:42] Service.newSeq(1598) | New Seq: b5283fffb80a4d08972e20c0e11b0d9f
+[DEBUG] [2021-11-24 09:04:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:b5283fffb80a4d08972e20c0e11b0d9f
+[DEBUG] [2021-11-24 09:04:42] Service$1Callback.onResponse(426) | response: {"id":596,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-24 09:04:42] ChannelEthereumService.send(62) | bcos request, seq:b5283fffb80a4d08972e20c0e11b0d9f, method:getGroupList
+[DEBUG] [2021-11-24 09:04:42] ChannelEthereumService.send(64) | bcos request:b5283fffb80a4d08972e20c0e11b0d9f {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":596}
+[INFO] [2021-11-24 09:04:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].
+[INFO] [2021-11-24 09:09:42] WeServerUtils.loadGroup(214) | [loadGroup] begin loading group.
+[INFO] [2021-11-24 09:09:42] WeServerUtils.loadGroup(219) | [loadGroup] the node:81.69.185.207:20200.
+[INFO] [2021-11-24 09:09:42] WeServerUtils.loadGroup(221) | [loadGroup] begin get groupList from the node: 81.69.185.207:20200.
+[DEBUG] [2021-11-24 09:09:42] Service.newSeq(1598) | New Seq: 0c1c6374d57d4a61a5dd441c37c73b99
+[DEBUG] [2021-11-24 09:09:42] Service.asyncSendEthereumMessage(615) | selected node 81.69.185.207:20200 bcos request, seq:0c1c6374d57d4a61a5dd441c37c73b99
+[DEBUG] [2021-11-24 09:09:42] Service$1Callback.onResponse(426) | response: {"id":597,"jsonrpc":"2.0","result":[1]}
+
+[DEBUG] [2021-11-24 09:09:42] ChannelEthereumService.send(62) | bcos request, seq:0c1c6374d57d4a61a5dd441c37c73b99, method:getGroupList
+[DEBUG] [2021-11-24 09:09:42] ChannelEthereumService.send(64) | bcos request:0c1c6374d57d4a61a5dd441c37c73b99 {"jsonrpc":"2.0","method":"getGroupList","params":[],"id":597}
+[INFO] [2021-11-24 09:09:42] WeServerUtils.loadGroup(223) | [loadGroup] get groupList successfully, groupList : [1].

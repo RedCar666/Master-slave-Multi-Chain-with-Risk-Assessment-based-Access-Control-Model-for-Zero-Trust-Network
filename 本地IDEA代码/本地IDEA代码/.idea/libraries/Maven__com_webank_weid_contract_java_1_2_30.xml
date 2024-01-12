@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: com.webank:weid-contract-java:1.2.30">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/webank/weid-contract-java/1.2.30/weid-contract-java-1.2.30.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/com/webank/weid-contract-java/1.2.30/weid-contract-java-1.2.30-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/com/webank/weid-contract-java/1.2.30/weid-contract-java-1.2.30-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

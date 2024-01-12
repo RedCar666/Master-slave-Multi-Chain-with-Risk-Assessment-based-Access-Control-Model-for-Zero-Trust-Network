@@ -1,0 +1,73 @@
+{
+  "groups": [
+    {
+      "name": "",
+      "type": "org.com.fisco.config.BcosConfig",
+      "sourceType": "org.com.fisco.config.BcosConfig"
+    },
+    {
+      "name": "contract",
+      "type": "org.com.fisco.config.ContractConfig",
+      "sourceType": "org.com.fisco.config.ContractConfig"
+    },
+    {
+      "name": "system",
+      "type": "org.com.fisco.config.SystemConfig",
+      "sourceType": "org.com.fisco.config.SystemConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "account",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.com.fisco.config.BcosConfig"
+    },
+    {
+      "name": "amop",
+      "type": "java.util.List<org.fisco.bcos.sdk.config.model.AmopTopic>",
+      "sourceType": "org.com.fisco.config.BcosConfig"
+    },
+    {
+      "name": "contract.management-address",
+      "type": "java.lang.String",
+      "sourceType": "org.com.fisco.config.ContractConfig"
+    },
+    {
+      "name": "contract.response-address",
+      "type": "java.lang.String",
+      "sourceType": "org.com.fisco.config.ContractConfig"
+    },
+    {
+      "name": "contract.table-address",
+      "type": "java.lang.String",
+      "sourceType": "org.com.fisco.config.ContractConfig"
+    },
+    {
+      "name": "crypto-material",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.com.fisco.config.BcosConfig"
+    },
+    {
+      "name": "network",
+      "type": "java.util.Map<java.lang.String,java.util.List<java.lang.String>>",
+      "sourceType": "org.com.fisco.config.BcosConfig"
+    },
+    {
+      "name": "system.group-id",
+      "type": "java.lang.Integer",
+      "sourceType": "org.com.fisco.config.SystemConfig",
+      "defaultValue": 1
+    },
+    {
+      "name": "system.hex-private-key",
+      "type": "java.lang.String",
+      "sourceType": "org.com.fisco.config.SystemConfig"
+    },
+    {
+      "name": "thread-pool",
+      "type": "java.util.Map<java.lang.String,java.lang.Object>",
+      "sourceType": "org.com.fisco.config.BcosConfig"
+    }
+  ],
+  "hints": []
+}

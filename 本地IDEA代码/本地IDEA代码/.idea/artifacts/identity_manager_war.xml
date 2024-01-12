@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="identity-manager:war">
+    <output-path>$PROJECT_DIR$/masterchain-im/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>identity-manager</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="identity-manager.war">
+      <element id="artifact" artifact-name="identity-manager:war exploded" />
+    </root>
+  </artifact>
+</component>
